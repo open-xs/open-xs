@@ -1,0 +1,15 @@
+{
+  "title": "Open-XS configuration file",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "type": "object",
+  "definitions": {
+    "database": {
+      "type": "object",
+      "description": "Defines the database configuration",
+      "properties": {
+        
+      }
+    }
+  }
+}
