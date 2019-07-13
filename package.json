@@ -1,0 +1,39 @@
+{
+  "name": "open-xs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "gulp && node dist/server/start.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-xs/open-xs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/open-xs/open-xs/issues"
+  },
+  "homepage": "https://github.com/open-xs/open-xs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.10.0"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.5.0",
+    "@babel/types": "^7.5.0",
+    "@types/bluebird": "^3.5.27",
+    "@types/express": "^4.17.0",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.2",
+    "@types/validator": "^10.11.1",
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.1",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.3"
+  }
+}
