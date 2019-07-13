@@ -3,13 +3,33 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
 
   "type": "object",
-  "definitions": {
+  "properties": {
     "database": {
       "type": "object",
       "description": "Defines the database configuration",
       "properties": {
-        
-      }
+        "name": {
+          "type": "string"
+        },
+        "host": {
+          "type": "string",
+          "default": "localhost"
+        },
+        "user": {
+          "type": "string",
+          "default": "root"
+        },
+        "password": {
+          "type": "string",
+          "default": ""
+        },
+        "dialect": {
+          "type": "string",
+          "default": "mysql",
+          "enum": ["mysql", "postgres", "sqlite", "mariadb", "mssql"]
+        }
+      },
+      "required": ["name"]
     }
   }
 }
