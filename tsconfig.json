@@ -1,0 +1,16 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+      "node_modules",
+      "**/*.test.ts"
+  ],
+  "compileOnSave": true,
+  "compilerOptions": {
+      "noImplicitAny": true,
+      "target": "es5",
+      "preserveConstEnums": true,
+      "sourceMap": true
+  }
+}
