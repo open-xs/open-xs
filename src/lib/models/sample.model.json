@@ -1,0 +1,24 @@
+{
+  "name": "sample",
+  "tableName": "table_sample",
+  "fields": {
+    "name": "STRING",
+    "title": {
+      "type": "TEXT",
+      "allowNull": false
+    },
+    "user": ["belongsTo", "user"],
+    "versions": {
+      "type": "hasMany",
+      "model": "version",
+      "foreignKey": "",
+      "sourceKey": ""
+    }
+  },
+  "indexes": [
+    { 
+      "unique": true, 
+      "fields": [ "name" ] 
+    }
+  ]
+}
